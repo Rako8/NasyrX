@@ -1,0 +1,70 @@
+﻿
+> luxe-store@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.1.7
+
+   Creating an optimized production build ...
+node.exe : Failed to 
+compile.
+At C:\Program Files\nod
+ejs\npm.ps1:29 char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Failed to com   
+ pile.:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+
+./app/actions/auth.ts
+Error:   [31mx[0m 
+You're importing a 
+component that needs 
+"next/headers". That 
+only works in a Server 
+Component but one of 
+its parents is marked 
+with "use client", so 
+it's a Client 
+Component.
+  [31m|[0m Learn 
+more: https://nextjs.or
+g/docs/app/building-you
+r-application/rendering
+  [31m|[0m 
+  [31m|[0m 
+   ,-[[36;1;4mC:\Users
+\Rakymzhan\antigravity_
+projects\app\actions\au
+th.ts[0m:1:1]
+ [2m1[0m | import { 
+cookies } from 
+"next/headers";
+   : [35;1m^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^[0m
+ [2m2[0m | import { 
+redirect } from 
+"next/navigation";
+ [2m3[0m | 
+ [2m3[0m | export 
+async function 
+login(prevState: any, 
+formData: FormData) {
+   `----
+
+Import trace for 
+requested module:
+./app/actions/auth.ts
+./app/admin/page.tsx
+
+
+> Build failed because 
+of webpack errors

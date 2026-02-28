@@ -1,0 +1,13 @@
+﻿app/admin/login/page.tsx(7,59): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(action: (state: { error: string; } | null) => { error: string; } | Promise<{ error: string; } | null> | null, initialState: { error: string; } | null, permalink?: string | undefined): [state: ...]', gave the following error.
+    Argument of type '(formData: FormData) => Promise<{ error: string; }>' is not assignable to parameter of type '(state: { error: string; } | null) => { error: string; } | Promise<{ error: string; } | null> | null'.
+      Types of parameters 'formData' and 'state' are incompatible.
+        Type '{ error: string; } | null' is not assignable to type 'FormData'.
+          Type 'null' is not assignable to type 'FormData'.
+  Overload 2 of 2, '(action: (state: { error: string; } | null, payload: unknown) => { error: string; } | Promise<{ error: string; } | null> | null, initialState: { error: string; } | null, permalink?: string | undefined): [state: ...]', gave the following error.
+    Argument of type '(formData: FormData) => Promise<{ error: string; }>' is not assignable to parameter of type '(state: { error: string; } | null, payload: unknown) => { error: string; } | Promise<{ error: string; } | null> | null'.
+      Types of parameters 'formData' and 'state' are incompatible.
+        Type '{ error: string; } | null' is not assignable to type 'FormData'.
+          Type 'null' is not assignable to type 'FormData'.
+app/layout.tsx(2,31): error TS2307: Cannot find module 'next-font/google' or its corresponding type declarations.
+app/product/[id]/page.tsx(3,29): error TS2307: Cannot find module './AddToCartButton' or its corresponding type declarations.
