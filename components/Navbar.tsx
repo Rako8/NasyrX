@@ -24,7 +24,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
                         <span className="material-symbols-outlined text-2xl">diamond</span>
-                        <h1 className="text-xl font-bold tracking-tight">NassrX</h1>
+                        <h1 className="text-xl font-bold tracking-tight">NasyrX</h1>
                     </Link>
 
                     {/* Desktop Nav */}

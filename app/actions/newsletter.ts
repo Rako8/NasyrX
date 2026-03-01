@@ -13,5 +13,5 @@ export async function subscribe(prevState: any, formData: FormData) {
     // In a real app, you would save this to your database or mailing list service
     console.log(`Newsletter subscription for: ${email}`);
 
-    return { success: "Thank you for subscribing to NassrX drops!" };
+    return { success: "Thank you for subscribing to NasyrX drops!" };
 }

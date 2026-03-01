@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-    title: "NassrX | Minimalist Luxury Footwear",
+    title: "NasyrX | Minimalist Luxury Footwear",
     description: "ELEVATE YOUR STEP with limited edition luxury sneakers.",
 };
 
