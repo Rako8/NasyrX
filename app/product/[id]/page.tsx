@@ -7,8 +7,19 @@ import { notFound } from "next/navigation";
 export default async function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
 
-    const product = await prisma.product.findUnique({ where: { id } });
-    if (!product) notFound();
+    const dbProduct = await prisma.product.findUnique({ where: { id } });
+    if (!dbProduct) notFound();
+
+    // Sanitize for client components (Next.js 15 serialization)
+    const product = {
+        id: dbProduct.id,
+        name: dbProduct.name,
+        price: dbProduct.price,
+        image: dbProduct.image,
+        description: dbProduct.description,
+        sizes: dbProduct.sizes,
+        category: dbProduct.category,
+    };
 
     return (
         <main className="flex-grow">
