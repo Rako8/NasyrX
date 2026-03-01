@@ -3,8 +3,9 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model Product {
@@ -12,12 +13,12 @@ model Product {
   name        String
   description String
   price       Float
-  category    String   // Shoes, Clothes, Accessories
+  category    String
   stockLevel  Int
   inStock     Boolean  @default(true)
-  sizes       String   // JSON array of sizes
-  image       String   // Main image URL
-  images      String   // JSON array of image URLs
+  sizes       String
+  image       String
+  images      String
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
@@ -27,7 +28,7 @@ model Order {
   customerEmail   String
   totalAmount     Float
   status          String   @default("PENDING")
-  items           String   @default("[]") // JSON array of items
+  items           String   @default("[]")
   stripeSessionId String?
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
