@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import CartDrawer from "./CartDrawer";
+import NXLogo from "./NXLogo";
 import { useLanguage } from "@/store/useLanguage";
 import { Locale } from "@/lib/translations";
 import { useEffect, useState } from "react";
@@ -23,7 +24,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <span className="material-symbols-outlined text-2xl">diamond</span>
+                        <NXLogo className="h-6 w-auto" />
                         <h1 className="text-xl font-bold tracking-tight">NasyrX</h1>
                     </Link>
 
