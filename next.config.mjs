@@ -8,6 +8,12 @@ const nextConfig = {
                 port: '',
                 pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: '8f08a8-hoss.akinoncloudcdn.com',
+                port: '',
+                pathname: '/**',
+            },
         ],
     },
 };
