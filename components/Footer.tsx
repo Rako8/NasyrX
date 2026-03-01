@@ -51,9 +51,8 @@ export default function Footer() {
                         </form>
                     </div>
                     <div className="flex gap-8 text-sm font-medium text-white/55">
-                        <Link href="#" className="hover:text-white transition-colors">Instagram</Link>
-                        <Link href="#" className="hover:text-white transition-colors">Twitter</Link>
-                        <Link href="#" className="hover:text-white transition-colors">Pinterest</Link>
+                        <a href="https://www.instagram.com/abunasyr_kk?igsh=MTJqc3FueGlmeGY0aA==" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
+                        <a href="https://wa.me/77762339900" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp (Abunassyr)</a>
                     </div>
                 </div>
                 <div className="mt-14 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] text-white/30">
