@@ -1,0 +1,23 @@
+# Project Requirements
+
+To run this project locally after cloning, ensure you have the following installed:
+
+1. **Node.js**: Version 18.x or higher
+2. **npm**: Version 9.x or higher
+3. **PostgreSQL**: A running instance (e.g., Supabase)
+4. **Environment Variables**: See `.env.example` (or create a `.env` file with your credentials)
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
